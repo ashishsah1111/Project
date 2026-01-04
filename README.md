@@ -1,12 +1,14 @@
 # Project
 
 students = []
+
 def add_student():
     student_id = input("Enter Student ID: ")
     name = input("Enter Student Name: ")
     age = input("Enter Age: ")
     course = input("Enter Course: ")
-student = {
+
+    student = {
         "id": student_id,
         "name": name,
         "age": age,
@@ -16,16 +18,19 @@ student = {
     students.append(student)
     print("Student added successfully.\n")
 
+
 def view_students():
     if not students:
         print("No student records found.\n")
         return
+
     for student in students:
         print("ID:", student["id"])
         print("Name:", student["name"])
         print("Age:", student["age"])
         print("Course:", student["course"])
         print("-" * 20)
+
 
 def search_student():
     search_id = input("Enter Student ID to search: ")
@@ -36,6 +41,7 @@ def search_student():
             return
     print("Student not found.\n")
 
+
 def delete_student():
     delete_id = input("Enter Student ID to delete: ")
     for student in students:
@@ -44,6 +50,7 @@ def delete_student():
             print("Student record deleted.\n")
             return
     print("Student not found.\n")
+
 
 while True:
     print("Student Management System")
@@ -54,6 +61,7 @@ while True:
     print("5. Exit")
 
     choice = input("Enter your choice: ")
+
     if choice == "1":
         add_student()
     elif choice == "2":
@@ -67,4 +75,3 @@ while True:
         break
     else:
         print("Invalid choice. Try again.\n")
- 
