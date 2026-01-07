@@ -75,3 +75,9 @@ while True:
         break
     else:
         print("Invalid choice. Try again.\n")
+
+# How is the Project rate it ?
+# How is the Project rate it ?
+# How is the Project rate it ?
+# How is the Project rate it ?
+# How is the Project rate it ?
